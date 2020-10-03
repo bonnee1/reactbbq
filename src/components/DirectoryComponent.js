@@ -6,9 +6,9 @@ import {
   CardTitle,
 } from "reactstrap";
 
-function RenderServiceItem({service, onClick}) {
+function RenderServiceItem({service}) {
   return (
-    <Card onClick={() => onClick(service.id)}>
+    <Card>
       <CardImg width="100%" src={service.image} alt={service.name} />
         <CardImgOverlay>
           <CardTitle>{service.name}</CardTitle>
@@ -22,7 +22,7 @@ function Catering(props) {
     const service = props.services.map((service) => {
       return (
         <div key={service.id} className="col-md-5 m-1">
-          <RenderServiceItem service={service} onClick={props.onClick} />
+          <RenderServiceItem service={service} />
           
         </div>
       );
