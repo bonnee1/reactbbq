@@ -1,19 +1,30 @@
 import React from 'react';
-import { UncontrolledCarousel, CarouselItem } from 'reactstrap';
+import { UncontrolledCarousel, CarouselItem, CarouselCaption } from 'reactstrap';
 
-function RenderCarouselSlides({slides}) {
+function RenderCarouselSlides({slide}) {
     return (
-        <UncontrolledCarousel slides={slides} />
+        <CarouselItem
+            key={slide.src}
+        >
+            <img src={slide.src} alt={slide.altText} />
+            <CarouselCaption captionText={slide.caption} captionHeader={slide.caption} />
+        </CarouselItem>
     )
 }
 
 
 function CarouselSlides(props) {
-    const slides = props.slides.map((slide) => {
+    const slide = props.slides.map((slide) => {
         return (
-            <UncontrolledCarousel slides={slides} />
-        )
-    })
+          <div key={slide.id} className="col-md-5 m-1">
+            <RenderCarouselSlides slide={slide} />
+            
+          </div>
+        );
+      });
+      
 }
+   
+
 
 export default CarouselSlides;
