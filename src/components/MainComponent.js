@@ -8,6 +8,7 @@ import Catering from './DirectoryComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { SERVICES } from '../shared/services';
 import { SLIDES } from '../shared/slides';
+import { UncontrolledCarousel } from 'reactstrap';
 
 
 
@@ -27,19 +28,20 @@ class Main extends Component {
 
         const HomePage = () => {
             return (
-                <Home/>
+                <CarouselSlides />
+                
             )
         }
         return (
             <div>
                 <Header />
                 <Switch>
-                    <Route path='/home' component={HomePage} />
-                    <Route exact path='/services' render={() => <Catering services={this.state.services}/>} />
+                    <Route path='/home' render={() => <CarouselSlides slides={this.state.slides} component={HomePage}/>}/>
+                    <Route exact path='/services' render={() => <Catering services={this.state.services}/>}/>
                     <Route exact path='/contactus' component ={Contact} />
                     <Redirect to='/home' />
                 </Switch>
-                <CarouselSlides />
+                <CarouselSlides slides={this.state.slides} />
                 <Footer />
             </div>
         );
