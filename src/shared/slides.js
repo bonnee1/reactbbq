@@ -1,34 +1,28 @@
 export const SLIDES = [
+    
     {
-        src: 'assets/joe.jpg',
-        altText: 'Joe',
-        caption: 'The mastermind behind it all',
-        Header: 'Chuckwagon Joe',
-        key: '1'
-    },
-    {
-        src: 'assets/catering.jpg',
+        src: 'assets/youzign.png',
         altText: 'event catering',
-        key: '2'
+        key: '1'
     },
     {
         src: 'assets/grill_masters.jpg',
         altText: 'The grill masters',
-        key: '3'
+        key: '2'
     },
     {
-        src: 'assets/bbq_collage.jpg',
+        src: 'assets/food_collage.png',
         altText: 'Food Collage',
-        key: '4'
+        key: '3'
     },
     {
         src: 'assets/onsite_chuckwagonbbq.jpg',
         altText: 'Onsite Catering',
-        key: '5'
+        key: '4'
     },
     {
         src: 'assets/bbq_sales.jpg',
         altText: 'Handmade Wagons',
-        key: '6'   
+        key: '5'   
     }
 ]

@@ -5,8 +5,8 @@ function Footer(props) {
     return (
         <footer className="site-footer">
             <div className="container">
-                <div className="row">             
-                    <div className="col-4 col-sm-2 offset-1">
+                <div className="row row-content">             
+                    <div className="col-4 col-sm-2">
                         <h5>Links</h5>
                         <ul className="list-unstyled">
                             <li><Link to='/home'>Home</Link></li>
