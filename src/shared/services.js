@@ -23,7 +23,7 @@ export const SERVICES = [
   {
     id: 3,
     name: "Chuckwagon BBQ Onsite Event",
-    image: "assets/chicken.jpg",
+    image: "assets/chuckwagon_onsite.png",
     description:
       "Ideal for groups of 75 or more guests, we bring our BBQ grills to your event location where the Grill Master will cook the BBQ to perfection. This catering option includes everything in our full-service staffed event with a 2-hour service time together with 2 hours for set up and break down of the event site. The pricing of the food is taken from our normal menu, then a $6.00 charge added per plate. There is also a mandatory 20% admin service charge and tax added on.",
   },

@@ -15,6 +15,7 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.3",
     "reactstrap": "8.5.1",
+    "styled-components": "^5.2.0",
     "typeface-lobster": "^0.0.72",
     "typeface-open-sans": "^0.0.75"
   },

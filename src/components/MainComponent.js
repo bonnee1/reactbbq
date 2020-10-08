@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
+import ServiceInfo from './ServiceInfoComponent';
 import CarouselSlides from './CarouselComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
@@ -27,7 +28,14 @@ class Main extends Component {
         const HomePage = () => {
           return (
               <Home />
-          )
+          );
+        }
+
+        const ServiceWithId = ({match}) => {
+            return (
+                <ServiceInfo service={this.state.services.filter(service => service.id ===
+                    +match.params.serviceId[0])} />
+            );
         }
         return (
             <div>
@@ -35,7 +43,8 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' render={() => 
                     <CarouselSlides slides={this.state.slides} component={HomePage}/>}/>
-                    <Route exact path='/services' render={() => <Catering services={this.state.services}/>}/>
+                    <Route exact path='/service' render={() => <Catering services={this.state.services}/>}/>
+                    <Route path='/directory/:serviceId' component={ServiceWithId} />
                     <Route exact path='/contactus' component ={Contact} />
                     <Redirect to='/home' />
                 </Switch>

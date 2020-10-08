@@ -5,14 +5,17 @@ import {
   CardImgOverlay,
   CardTitle,
 } from "reactstrap";
+import { Link } from 'react-router-dom'
 
 function RenderServiceItem({service}) {
   return (
     <Card>
+      <Link to={`/directory/${service.id}`}>
       <CardImg width="100%" src={service.image} alt={service.name} />
         <CardImgOverlay>
           <CardTitle>{service.name}</CardTitle>
         </CardImgOverlay>
+        </Link>
     </Card>
   );
 }

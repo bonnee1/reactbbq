@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GlobalStyle from '../fonts/fonts';
 import { Navbar, NavbarBrand, Jumbotron, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
@@ -31,7 +32,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
-                <Navbar dark sticky="top" expand="md">
+                <Navbar sticky="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><img src="/logo.png" height="50" width="40" alt="BBQ logo" />Joe's Chuckwagon BBQ</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />

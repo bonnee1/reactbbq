@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans" , sans-serif;
 }
 h1, h2, h3, .card-body>.card-title {
-  font-family: "CountryWestern", cursive;
+  font-family: "CountryWestern2", regular;
 }
 .card-title {
   font-weight: 500;
@@ -10,7 +10,7 @@ h1, h2, h3, .card-body>.card-title {
 }
 
 h2 {
-  color: #3046c5
+  color: #000000
 }
 
 .card-img-overlay .card-title {
@@ -25,7 +25,7 @@ h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#d8a487, #f0dba8);
+  background-image: linear-gradient(#F19B69, #F1E9D4);
   padding: 20px 0;
 }
 
@@ -37,11 +37,11 @@ h2 {
 }
 
 .jumbotron h2 {
-  color: #CEC8FF;
+  color: #F1E9D4;
 }
 
 .navbar-dark {
-  background-color: #4c0607;
+  background-color: #fff;
 }
 
 .row-content {
