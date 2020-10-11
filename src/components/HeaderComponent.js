@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import GlobalStyle from '../fonts/fonts';
+import styled from 'styled-components';
+import WesternFont from '../fonts/fonts'
 import { Navbar, NavbarBrand, Jumbotron, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
-
+    
     constructor(props) {
         super(props);
 
@@ -19,14 +20,16 @@ class Header extends Component {
             isNavOpen: !this.state.isNavOpen
         });
     }
+
     render() {
+        
         return (
             <React.Fragment>
                 <Jumbotron fluid>
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h1>Joe's Chuckwagon BBQ</h1>
+                                <WesternFont>Joe's Chuckwagon BBQ</WesternFont>
                                 <h2>Santa Maria comfort food</h2>
                             </div>
                         </div>
@@ -65,6 +68,7 @@ class Header extends Component {
             </React.Fragment>
         );
     }
+   
 }
 
 export default Header;

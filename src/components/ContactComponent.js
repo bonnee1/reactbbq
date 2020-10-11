@@ -1,12 +1,19 @@
+import { render } from '@testing-library/react';
 import React from 'react';
+import styled from 'styled-components';
+
+const ContactDiv = styled.div`
+    font-family: "Country Western";`
 
 function Contact(props) {
+    
     return (
         <div className="container">
             <div className="row">
                 <div className="col">
+                    
                     <h2>Contact Us</h2>
-                    <hr />
+                <hr />
                 </div>
             </div>
 

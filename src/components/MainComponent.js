@@ -43,7 +43,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' render={() => 
                     <CarouselSlides slides={this.state.slides} component={HomePage}/>}/>
-                    <Route exact path='/service' render={() => <Catering services={this.state.services}/>}/>
+                    <Route exact path='/services' render={() => <Catering services={this.state.services}/>}/>
                     <Route path='/directory/:serviceId' component={ServiceWithId} />
                     <Route exact path='/contactus' component ={Contact} />
                     <Redirect to='/home' />
