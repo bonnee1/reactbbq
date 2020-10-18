@@ -29,6 +29,10 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
+                                <NavbarBrand href="/"><img src="/logo.png" height="50" width="40" alt="BBQ logo" />
+                                </NavbarBrand>
+                            </div>
+                            <div className="col">
                                 <WesternFont>Joe's Chuckwagon BBQ</WesternFont>
                                 <h2>Santa Maria comfort food</h2>
                             </div>
@@ -37,7 +41,7 @@ class Header extends Component {
                 </Jumbotron>
                 <Navbar sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/logo.png" height="50" width="40" alt="BBQ logo" />Joe's Chuckwagon BBQ</NavbarBrand>
+                        <NavbarBrand href="/"><img src="/logo.png" height="50" width="40" alt="BBQ logo" />Joe's Chuckwagon BBQ</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>

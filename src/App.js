@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import WesternFont from './fonts/fonts';
-import { ThemeProvider, }  from 'styled-components';
 import Main from "./components/MainComponent";
 import { BrowserRouter } from 'react-router-dom';
 import "./App.css";

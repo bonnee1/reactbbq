@@ -9,6 +9,7 @@ import Catering from './DirectoryComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { SERVICES } from '../shared/services';
 import { SLIDES } from '../shared/slides';
+import MyCarousel from './CarouselComponent';
 
 
 
@@ -28,7 +29,7 @@ class Main extends Component {
         const HomePage = () => {
           return (
               <Home />
-          );
+         );
         }
 
         const ServiceWithId = ({match}) => {
@@ -44,9 +45,8 @@ class Main extends Component {
                     <Route path='/home' render={() => 
                     <CarouselSlides slides={this.state.slides} component={HomePage}/>}/>
                     <Route exact path='/services' render={() => <Catering services={this.state.services}/>}/>
-                    <Route path='/directory/:serviceId' component={ServiceWithId} />
+                    <Route path='/services/:serviceId' component={ServiceWithId} />
                     <Route exact path='/contactus' component ={Contact} />
-                    <Redirect to='/home' />
                 </Switch>
                 <Footer />
             </div>
