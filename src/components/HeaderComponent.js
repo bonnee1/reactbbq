@@ -29,10 +29,13 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
+<<<<<<< HEAD
                                 <NavbarBrand href="/"><img src="/logo.png" height="50" width="40" alt="BBQ logo" />
                                 </NavbarBrand>
                             </div>
                             <div className="col">
+=======
+>>>>>>> eeb5271096d511fc941b7e2bf103646670505f51
                                 <WesternFont>Joe's Chuckwagon BBQ</WesternFont>
                                 <h2>Santa Maria comfort food</h2>
                             </div>
