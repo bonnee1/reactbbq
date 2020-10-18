@@ -23,6 +23,6 @@ export const SLIDES = [
     {
         src: 'assets/bbq_sales.jpg',
         altText: 'Handmade Wagons',
-        key: '5'   
+        key: ''   
     }
 ]
